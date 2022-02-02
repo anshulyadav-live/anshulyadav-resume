@@ -1,0 +1,320 @@
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  background-color: #06233B;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+ .container{
+  padding-right: var(--bs-gutter-x,2.75rem);
+  padding-left: var(--bs-gutter-x,2.75rem);
+}
+
+/* The navigation menu links */
+ .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.active-navitem{
+ border-left:red 2px solid;
+ color: grey;
+}
+/*
+When you mouse over the navigation links, change their color*/
+.sidenav div div a:hover {
+  color: #f1f1f1;
+} 
+
+/* menu open btn */
+
+.openbtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Position and style the close button (top right corner) */
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.main{
+  margin-left: 250px;
+}
+
+/* Page content */
+
+
+.centered {
+  text-align: center;
+  align-items: center;
+}
+
+.namehr {
+  height: 5px;
+  border-width: 0;
+  color: red;
+  background-color: red;
+  width: 50px;
+  opacity: 1;
+}
+
+/* main page */
+.profile-text {
+  vertical-align: middle;
+  padding: 25px;
+}
+.hi-m {
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;  
+  font-size: 1.5rem;
+}
+.nameline {
+  font-family: 'Roboto', sans-serif;
+  font-size: 	3.75rem;
+  font-weight: 700;
+}
+.profile-img {
+  width: 100%;
+}
+.btn-hireme{
+  background-color: red;
+  color:#f1f1f1;
+  text-align: center;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+.btn-download{
+  background-color:#06233B;
+  color:#f1f1f1;
+  text-align: center;
+  padding: 3px;
+  font-size: 1.5rem;
+}
+
+.mainheading{
+  font-family: 'Roboto', sans-serif;
+  font-size: 	2.75rem;
+  font-weight: 500;
+}
+
+
+
+
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Buttons */
+/* Inputs */
+/* Timeline custom component */
+.timeline {
+  border-left: 2px solid #E6E9ED;
+  padding: 1rem 0; }
+
+.timeline-card {
+  position: relative;
+  margin-left: 31px;
+  border-left: 2px solid;
+  margin-bottom: 2rem; }
+
+.timeline-card:last-child {
+  margin-bottom: 1rem; }
+
+.timeline-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  top: 20px;
+  left: -41px;
+  border: 2px solid;
+  z-index: 2; }
+
+.timeline-card:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: currentColor;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1; }
+
+.timeline-card-primary {
+  border-left-color: #4A89DC; }
+
+.timeline-card-primary:before {
+  border-color: #4A89DC; }
+
+.timeline-card-primary:after {
+  background-color: #4A89DC; }
+
+.timeline-card-success {
+  border-left-color: #ce432b; }
+
+.timeline-card-success:before {
+  border-color: #c43232; }
+
+.timeline-card-success:after {
+  background-color: #e21111; }
+
+html {
+  scroll-behavior: smooth; }
+
+.site-title {
+  font-size: 1.25rem;
+  line-height: 2.5rem; }
+
+.nav-link {
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.5); }
+
+.nav-link:hover,
+.nav-link:focus,
+.active .nav-link {
+  color: rgba(0, 0, 0, 0.8); }
+
+.nav-item + .nav-item {
+  margin-left: 1rem; }
+
+.cover {
+  border-radius: 10px; }
+
+
+.avatar {
+  max-width: 216px;
+  max-height: 216px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.avatar img {
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.hobbies{
+  background-color: #ff2600;
+  border: #FFF solid;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.hobbies i{
+  font-size: 3rem;
+}
+
+@media (min-width: 48em) {
+  .site-title {
+    float: left; }
+  .site-nav {
+    float: right; }
+  .avatar {
+    margin-bottom: -80px;
+    margin-left: 0; } }
+
+@media print {
+  body {
+    background-color: #fff; }
+  .container {
+    width: auto;
+    max-width: 100%;
+    padding: 0; }
+  .cover, .cover-bg {
+    border-radius: 0; }
+  .cover.shadow-lg {
+    box-shadow: none !important; }
+  .cover-bg {
+    padding: 5rem !important;
+    padding-bottom: 10px !important; }
+  .avatar {
+    margin-top: -10px; }
+  .about-section {
+    padding: 6.5rem 5rem 2rem !important; }
+  .skills-section,
+  .work-experience-section,
+  .education-section,
+  .contant-section {
+    padding: 1.5rem 5rem 2rem !important; }
+  .page-break {
+    padding-top: 5rem;
+    page-break-before: always; } }
+
+
+    @media only screen and (max-width: 600px) {
+      .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0px; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        background-color: #06233B;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+      .main{
+        margin-left: 0px;
+      }
+      
+    }
